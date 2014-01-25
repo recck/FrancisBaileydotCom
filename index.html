@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width; initial-scale=1.0">
+			<meta charset="UTF-8">
+			<link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+			<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+			<link rel="stylesheet" href="assets/css/responsive.gs.12col.css" type="text/css" />
+			<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+			<script src="assets/js/contact.js"></script>
+		</head>
+		<body>
+			<div class="container">
+				<header class="row" id="row1">
+					<div class="logo">
+						<h2>My<span>Logo</span></h2>
+					</div>
+					<nav>
+					    <ul class="full-menu" id="nav">
+							<li class="menu-li"><a href="#intro">Intro</a></li>
+							<li class="menu-li"><a href="#folio">Portfolio</a></li>
+							<li class="menu-li"><a href="#contact">Contact</a></li>
+						</ul>	
+						<div class="icon">
+							<a class="mobile-menu"></a>
+						</div>
+					</nav>		
+				</header>
+				<div class="row" id="row2">
+					<div class="col span_custom8">
+						<h2>Hello! My name is Francis Bailey</h2>
+						<p id="intro">I'm a first year Computer Science student at Okanagan College. I have a strong interest in web development and an affinity for all things programming. With almost 2 years of experience in web development, I understand the difficulties of bringing a project to life. I enjoy the challenge and learn new things every day. I'm open minded and adopt easily to new environments and tasks. If you want to hire me for a project, <a href="#contact">contact</a> me and we can get working on it right away.</p>
+						<p>When I'm not making my own projects, I spend time assisting others with theirs. You can often find me helping out on the <a href="http://irc.phpfreaks.com" target="_blank">phpfreaks irc channel</a>. I'm an advocate for open source software and believe everyone should have access to the internet. Outside of programming, you can find me riding my bmx at the skatepark and on the streets.  In the winter, I spend my time snowboarding and wishing it were summer.</p>
+					</div>
+					<div class="col span_custom4">
+						<div class="img-container">
+							<img id="portfolio" src="assets/images/image.png" />
+							<div class="caption">
+								<span>Location: Kelowna, BC, Canada</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="seperator"></div>
+				<div class="row" id="row3">
+					<h2 id="folio">Skill Set and Portfolio</h2>
+					<p>I am well versed in PHP, HTML, CSS, MYSQL and gaining proficiency with jQuery and Java. As a result, I spend most of my time making web-based projects with php.  My latest application, <a id="uploadr-link">Uploadr</a>, is a multi-file uploader using ajax and php. You can see the code over at <a href="//github.com/FrancisBaileyH/Uploadr" target="_blank">github</a>.  Click the thumbnails to view more info on my projects: </p>
+				</div>
+				<div class="row" id="projects">
+					<div class="col span_6 project-banner">
+						<div class="project-logos">
+							<img class="project-photo" src="assets/images/uploadr.png" id="uploadr"/>
+						</div>
+					</div>
+					<div class="col span_6 project-banner">
+						<div class="project-logos">
+							<img class="project-photo" src="assets/images/aspen.png" id="aspen"/>
+						</div>	
+					</div>
+					<div class="splash" id="uploadr-splash">
+						<div class="popup">
+							<div class="close">X</div>
+							<h2>Uploadr</h2>
+							<p>As a self taught programmer I'm always looking for ways to challenge myself.  I was looking for a new project to work on and realized a file-management app would be really handy.  That's when I decided to create Uploadr.</p>
+							<p>Using ajax, jquery, and php Uploadr can upload and track the progress of multiple files in a single request.  If an error occurs Uploadr continues uploading other files and returns useful error information to the user.  If for some reason javascript is disabled, Uploadr is designed to function using purely php. You can check out the code on <a href="http://github.com/FrancisBaileyH/Uploadr/" target="_blank">github</a> or click the link below to view a live demo.</p>
+							<form class="project-dialog-form" method="post" target="_blank" action="http://uploadr.kattenmedia.com">
+								<input type="submit" value="View Demo" class="button project-dialog-button"/>
+							</form>
+						</div>
+					</div>
+					<div class="splash" id="aspen-splash">
+						<div class="popup">
+							<div class="close">X</div>
+							<h2>Aspen Global Systems</h2>
+							<p>Aspen Global Systems is an accounting software resale company.  They wanted to expand their presence online and hired me to create a new website for their business.  I looked after the project from the ground up.</p>
+							<p>I started by setting up shared hosting and email service.  Afterwards, I created the site using wordpress and a pre-made theme.  Some parts of the theme were not up to par, so I added custom tweaks using css.  I also added a few plugins to help bring functionality to the site. Thanks to my prior experience working with wordpress I was able to deliver the site on time and on budget.</p>
+							<form class="project-dialog-form" method="post" target="_blank" action="http://aspenglobalsystems.com">
+								<input type="submit" value="View Site" class="button project-dialog-button"/>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="seperator"></div>
+				<div class="row" id="row4">
+					<h2>Interested in <span id="highlight">Talking</span>?</h2>
+					<p>If you're interested in hiring me or want to know more about me you can contact me through the form below.  I will get back to you as soon as possible!</p>
+					<div class="msg-container"></div>
+					<form  class="contact-form" id="contact" action="#" method="POST">
+						<fieldset>
+							<label>Name</label>
+							<input type="text" name="name" class="form-input"/>
+							<label>Email</label>
+							<input type="text" name="email" class="form-input"/>
+							<label>What can I do for you?</label>
+							<textarea name="msg" class="form-input"></textarea>
+							<input type="submit" name="submit" value="Contact Me" class="button contact-button"/>	
+						</fieldset>		
+					</form>
+				</div>
+				<footer class="row" ></footer>	
+			</div>	
+		</body>
+	</html>
+
