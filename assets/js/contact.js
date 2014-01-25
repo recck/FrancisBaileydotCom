@@ -20,7 +20,7 @@ $( document ).ready( function() {
 				{
 					$('html,body').animate({
 						scrollTop: target.offset().top
-					}, 1000);
+					}, 500);
 					return false;
 				}
 			}
@@ -70,7 +70,7 @@ $( document ).ready( function() {
 		$( '#' + e.target.id + '-splash' ).fadeIn();
 	});
 	
-	$( '.splash .popup .close' ).on( 'click', function()
+	$( '.splash, .close' ).on( 'click', function()
 	{
 		$( '.splash' ).fadeOut();
 	});

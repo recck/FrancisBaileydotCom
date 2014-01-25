@@ -91,7 +91,7 @@ p a {
 	width: 30%;
 	float: left;
 	min-width: 10em;
-	padding-top: 1em;
+	padding-top: 1.5em;
 }
 
 .logo h2 {
@@ -112,6 +112,50 @@ p a {
 	color: white;
 	font-size: 12px;
 	border-left: 2px solid #1abc9c;
+}
+
+/* Courtesy of https://github.com/daneden/animate.css/blob/master/animate.css*/
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 /*===================*/
@@ -259,6 +303,10 @@ a {
 	color: #16a085;
 }
 
+a:hover {
+	color: #00876C;
+}
+
 .contact-form .form-input:focus {
 	border: 1px solid #16a085;
 	outline: none;
@@ -358,6 +406,7 @@ div#projects {
 	margin-bottom: 0;
 }
 
+
 /*=======================*/
 /*		SEPERATOR       */
 /*=====================*/
@@ -427,6 +476,7 @@ div#projects {
 	margin-top: 2em;
 	margin-bottom: 2em;
 	width: 7em;
+	cursor: pointer;
 }
 
 .project-dialog-form {
@@ -484,7 +534,7 @@ div#projects {
 	width: 7.7em;
 }
 
-.button:hover {
+.button:active {
 	border-bottom: 2px solid #16a085;
 }
 
@@ -538,11 +588,8 @@ div#projects {
 	.logo h2 {
 		font-size: 20px;
 	}
-	
-	.logo p {
-		display: none;
-		padding: 0;
-		margin: 0;
+	div.logo {
+		padding-top: 0.75em;
 	}
 	
 	.project-banner {
