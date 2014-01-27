@@ -2,8 +2,7 @@
 
 $( document ).ready( function() {
 
-		
-		
+			
 	//Courtesy of CSS-Tricks: http://css-tricks.com/snippets/jquery/smooth-scrolling/
 	$(function() {
 		$('a[href*=#]:not([href=#])').click(function() {
@@ -115,28 +114,31 @@ $( document ).ready( function() {
 	{
 		if ( data['status'] == true )
 		{
-			alert( 'success' );
+			$( '.msg-container' ).append( '<p class="msg success">Message sent successfully' 
+										  + ', I will get back to you shortly</p>' );
+			clearForm();
 		}
 		else
 		{
-			if ( typeof(data['error']['all']) == 'undefined' )
+			$.each( data['error'], function( field, error ) 
 			{
-				$.each( data['error'], function( field, error ) 
-				{
-					$( '.msg-container' )
-					.append( '<p class="error">' + error + '</p>' );
+				$( '.msg-container' )
+				.append( '<p class="msg error">' + error + '</p>' );
 					
-					$( '[name=' + field + ']' ).css( 'border', '1px solid #e74c3c'); 
+				$( '[name=' + field + ']' ).css( 'border', '1px solid #e74c3c'); 
 							
-				});
-			}
-			else
-			{
-				alert( data['error']['all'] );
-			}
-			scrollToErrors();
-		}	
+			});
+		}
+		
+		scrollToErrors();
+	}	
+	
+	
+	function clearForm()
+	{
+		document.getElementById( "contact" ).reset();
 	}
+		
 	
 	function resetFormErrors()
 	{
