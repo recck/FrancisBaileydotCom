@@ -114,8 +114,7 @@ $( document ).ready( function() {
 	{
 		if ( data['status'] == true )
 		{
-			$( '.msg-container' ).append( '<p class="msg success">Message sent successfully' 
-										  + ', I will get back to you shortly</p>' );
+			$( '.msg-container' ).append( '<p class="msg success">Message sent successfully!</p>' );
 			clearForm();
 		}
 		else
