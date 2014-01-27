@@ -147,7 +147,7 @@ $( document ).ready( function() {
 		for ( var i = 0; i < fields.length; i++ )
 		{
 			$( '[name=' + fields[i] + ']' ).css( 'border', '1px solid #95a5a6' );
-			$( '.msg-container' ).html( '' );
+			$( '.msg-container' ).fadeOut();
 		}
 	}
 	
