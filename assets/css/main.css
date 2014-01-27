@@ -156,6 +156,8 @@ p a {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
 }
 
 /*===================*/
@@ -189,7 +191,6 @@ p a {
 	height: 100%;
 	padding: 1.4em 0 0 0;
 	transition: all 0.3s ease;
-	opacity: 0.8;
 }
 
 li:last-child {
@@ -475,7 +476,7 @@ div#projects {
 .project-dialog-button {
 	margin-top: 2em;
 	margin-bottom: 2em;
-	width: 7em;
+	width: 7.5em;
 	cursor: pointer;
 }
 
