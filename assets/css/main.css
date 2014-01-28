@@ -71,6 +71,7 @@ h2 {
 	font-weight: 400;
 	font-size: 20px;
 	opacity: 0.8;
+    cursor: default;
 }
 
 a {
@@ -305,7 +306,12 @@ a {
 }
 
 a:hover {
-	color: #00876C;
+	color: #076855;
+}
+
+h2.lead {
+    border-bottom:2px solid #16A085;
+    border-bottom:2px solid rgba(22,160,133, 0.2);
 }
 
 .contact-form .form-input:focus {
@@ -324,6 +330,16 @@ p.error {
 
 p.success {
 	border-left: 2px solid #16a085;
+}
+
+h2 > i {
+    color:#ECF0F1;
+    transition: all 0.3s ease;
+}
+
+h2:hover > i {
+    color:#000;
+    transition: all 0.3s ease;
 }
 
 ::selection {
@@ -405,6 +421,7 @@ div#projects {
 
 .project-logos img {
 	height: 12em;
+    cursor: pointer;
 }
 
 #project-seperator {
@@ -532,6 +549,7 @@ div#projects {
 	background: #1abc9c;
 	border-bottom: 4px solid #16a085;
 	color: white;
+    cursor: pointer;
 }
 
 .contact-button {

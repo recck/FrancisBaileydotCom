@@ -19,6 +19,16 @@ $( document ).ready( function() {
 			}
 		});
 	});
+    
+    $('.row > h2').each(function(){
+        $(this).append('<i class="fa fa-angle-up fa-fw"></i>');
+    });
+    
+    $('h2').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
 	
 	
 	//Fix for android phones
